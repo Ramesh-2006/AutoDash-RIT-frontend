@@ -3,5 +3,8 @@
   "build": {
     "installCommand": "npm install",
     "buildCommand": "CI=false npm run build"
+  },
+  "deploy": {
+    "startCommand": "npx serve -s build -l $PORT"
   }
 }
